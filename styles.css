@@ -1,16 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #0ff;
     padding: 1em 0;
     text-align: center;
+    box-shadow: 0 0 10px #0ff;
 }
 
 main {
@@ -26,21 +29,36 @@ main {
 .signup input[type="email"] {
     padding: 0.5em;
     margin-bottom: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #0ff;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
     border-radius: 4px;
 }
 
 .signup button {
     padding: 0.5em;
-    background-color: #333;
-    color: #fff;
+    background-color: #0ff;
+    color: #000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 0 5px #0ff;
+    font-weight: bold;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #eee;
+    background-color: rgba(0,0,0,0.8);
+    color: #0ff;
+    box-shadow: 0 0 10px #0ff inset;
+}
+
+canvas#constellation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
