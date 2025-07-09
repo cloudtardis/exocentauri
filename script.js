@@ -7,7 +7,6 @@ function resize() {
   createStarField();
 }
 window.addEventListener('resize', resize);
-resize();
 
 // approximate centaur constellation
 const stars = [
@@ -92,5 +91,5 @@ function draw() {
   requestAnimationFrame(draw);
 }
 
-createStarField();
+resize();
 requestAnimationFrame(draw);
